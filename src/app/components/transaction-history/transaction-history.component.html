@@ -1,0 +1,33 @@
+
+<div class="wrapper">
+    <app-header></app-header>
+    <div class="content">
+        <div class="transaction-history">
+            <h2>Transaction History</h2>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Transaction ID</th>
+                    <th>Transfer From</th>
+                    <th>Transfer To</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let transaction of transactions">
+                    <td>{{ transaction.transactionid }}</td>
+                    <td>{{ transaction.transferFrom }}</td>
+                    <td>{{ transaction.transferTo }}</td>
+                    <td>{{ transaction.amount }}</td>
+                    <td>{{ transaction.date | date: 'medium' }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+    <app-footer></app-footer>
+  </div>
+  

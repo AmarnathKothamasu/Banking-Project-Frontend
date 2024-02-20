@@ -1,0 +1,32 @@
+/* styles.css or your component's CSS file */
+
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Adjust as per your design */
+    color: #fff; /* Adjust as per your design */
+    z-index: 1000; /* Ensure header appears above other content */
+  }
+  
+  .content {
+    padding-top: 60px; /* Adjust according to the header's height */
+    padding-bottom: 60px; /* Adjust according to the footer's height */
+  }
+  
+  .app-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Adjust as per your design */
+    color: #fff; /* Adjust as per your design */
+    z-index: 1000; /* Ensure footer appears above other content */
+  }
+  

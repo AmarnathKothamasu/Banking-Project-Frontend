@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-section,
+.login-section {
+    width: 50%;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    /* Adjust the width to take the full width of its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Ensure the image behaves as a block-level element */
+}
+
+
+
+.login-section h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+a {
+    display: block;
+    text-align: center;
+}

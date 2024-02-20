@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+  }
+  
+  .left-section {
+    flex: 1;
+  }
+  
+  .right-section {
+    flex: 1;
+    padding: 20px; /* Adjust padding as needed */
+  //  background-color: #f9f9f9; /* Add a background color to the right section for clarity */
+  }
+  
+  /* Ensure image takes full height of the container */
+  .left-section img {
+    width: 100%;
+    height: 100%;
+   // object-fit: cover; /* Ensure the image covers the entire container */
+  }
+  .container {
+    padding: 25px;
+  }
+  

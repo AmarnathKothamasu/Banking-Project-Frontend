@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="left-section">
+    <img src="assets/BankingLogo.png" alt="Description of the image">
+  </div>
+  <div class="right-section">
+    <h2>Create User</h2>
+    <form [formGroup]="userForm" (ngSubmit)="createUser()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" formControlName="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" formControlName="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" formControlName="password" required>
+      </div>
+      <div class="form-group">
+        <label for="contactNo">Contact Number:</label>
+        <input type="text" class="form-control" id="contactNo" formControlName="contactNo" required>
+      </div>
+      <div class="form-group">
+        <label for="pin">PIN:</label>
+        <input type="text" class="form-control" id="pin" formControlName="pin" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" class="form-control" id="dob" formControlName="dob" required>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Create User</button>
+    </form>
+    <a routerLink="/login">Already Existing User!? Please Login!!</a>
+  </div>
+</div>
